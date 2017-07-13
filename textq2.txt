@@ -1,0 +1,30 @@
+
+
+ 7. + Upload the cloud picture ("cloud") (anywhere on App Engine) and then upload the text files (given) 
+      to (the database on) your web site. 
+      You may do this manually or through a web interface.
+    + There is no "user" concept, no login, all people using this service are "users".
+    + Create a web interface that allows a (any) user to enter a word, W, (single word) and you will display the 
+      entire text for that file where the word matches. Display the text (all the text in that  file, where a word matches) 
+      on a web page.
+--> Show us. 10 points
+--> Put code here. 15 points
+   
+ 8. + Using part 7, show the time (that your application uses) to access text from the database, show time to retrieve each text, 
+      and time to get all texts that are displayed.
+    + Show the text (matching W), Fariba and show time to retrieve each text, 
+      as well as the total time (to search all texts), on a web page.
+--> Show us. 10 points
+--> Put code here. 15 points
+
+
+ 9. + using part 7, Using jmeter, or similar, show the Jees performance of your application.
+      We (assessors) will supply W, the number of users, and any other necessary parameters.
+--> Show us. 10 points
+--> Put code here. 15 points
+
+ 
+ 
+ Done. When complete, return (send) this quiz
+ If you finish early, send this immediately, otherwise send on-time. 
+

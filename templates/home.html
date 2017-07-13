@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMAGEPEDIA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+<body>
+	<table>
+		<tr>
+            <img src="Cloud.jpg">
+		<br>  Name : Gowtam Dasaka<br> ID: 1001232537 <br> class section : 3:30<br>
+            logged in as {{ session['username'] }} in group {{ session['group'] }}
+            <br>
+            delay is {{ delay }}
+            <br>
+            db delay is {{ dbd }}
+            <a href="/logout">Logout</a> <br>
+			<form action="/upload1" method="POST" enctype="multipart/form-data">
+                <input type="file" name="ufile">
+                <input type="submit" value="submit">
+            </form><br><br>
+            <form action="/getimages" method="POST" enctype="multipart/form-data">
+                <input type="submit" value="GET ALL IMAGES">
+            </form><br><br>
+
+            <form action="/gettext" method="POST" enctype="multipart/form-data">
+                <input type="text" name="key"><br>
+                <input type="submit" value="GET Related text"><br>
+            </form>
+            <form action="/userimages" method="POST" enctype="multipart/form-data">
+                <input type="text" name="username"><br>
+                <input type="submit" value="GET USER IMAGES"><br>
+            </form>
+            <form action="/search" method="POST" enctype="multipart/form-data">
+                <input type="number" name="keyword"><br>
+                <input type="submit" value="SEARCH"><br>
+            </form>
+            <form action="/groupimages" method="POST" enctype="multipart/form-data">
+                <input type="text" name="grp"><br>
+                <input type="submit" name="action" value="GET GROUP IMAGES"><br>
+                <input type="submit" name="action" value="CHANGE GROUP"><br>
+            </form>
+            <form action="/deleteimage" method="POST" enctype="multipart/form-data">
+                <input type="text" name="grp"><br>
+                <input type="text" name="mins"><br>
+                <input type="submit" name="action" value="delete IMAGES"><br>
+            </form>
+
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+Name:
+Last 4 digits ID:
+Computer IP address:
+CSE 6331, Cloud Computing  3:30
+
+
+Quiz Q7, Summer 2016   (c) DL, UTA, 2016
+
+ Please read this:
+  I understand that I am on my honor during this quiz, I will not collaborate, 
+  use non-allowed sources, and I will not discuss this quiz with anyone for 
+  the next 24 hours. In submitting this quiz, I agree to this honor code.
+  Please initial here:____________________
+
+  C&P means copy and paste only those relevant lines from your program(s) into this quiz.
+  You may include lines of code, HTML, CSS, or any "textual" artifact (no libraries, executables, utilities,
+  pictures, diagrams, songs, or video, please)
+
+  NOTE: Please submit on time, late submissions will have points deducted!
+        Please submit to Blackboard - IF unavailable, email to class account. 
+
+  Due to technical logistics, we can not look at any demo (the "show us" part) in the last 5 minutes of the quiz. 
+
+  The icon "--->" means that you should place an answer at this location in the quiz, either textual, pieces of code 
+    (or HTML,XML,CSS or similar), or numeric results.
+
+ 1. Good luck! Jees
+
+ 2. Get all files from this same folder.
+   
+ 3. Rename this quiz and your programs with your name and last digits of your ID. Alex
+
+ 4. For each of the following parts, please implement, cut and paste the relevant code (no binaries,
+    libraries, etc, just source code and any textual configuration files, html, and similar) into this file. 
+    If possible, show each part (with  an output) to a GTA, when complete. 
+    Submit this quiz (to Blackboard) when complete, you may make up to 3 submissions. 
+
+ 

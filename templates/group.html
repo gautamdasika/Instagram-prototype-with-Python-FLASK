@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+delay is
+{{ delay }}<br>
+db delay is
+{{ dbd }}
+{% for image,id,grp,time in images %}
+    <form method="POST" action="/manageimage" enctype="multipart/form-data">
+    <input type="text" name="imid" value="{{ id }}">
+    <img alt="sample" height="500" width="500" src="data:image/png;base64,{{ image }}">
+    {{ time }}    <br>{{ grp }}
+    <input type="text" maxlength="35" name="comment">
+    <input type="submit" name="action" value="comment">
+    <input type="submit" name="action" value="delete">
+    </form>
+    {% for cmt in comments %}
+        {% if cmt['imageid'] == id%}
+            <form method="POST" action="/deletecmt" enctype="multipart/form-data">
+            {{ cmt['username'] }}:{{cmt['comment']}}
+            <input type="hidden" name="id" value="{{ cmt['_id'] }}">
+            <input type="submit" value="delete"><br>
+            </form>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+</body>
+</html>

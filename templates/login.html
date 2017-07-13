@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMAGEPEDIA LOGIN</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+<body>
+{% if delay %}
+    {{ delay }}
+{% endif %}
+	<table>
+		<tr>
+		<br>  Name : Gowtam Dasaka<br> ID: 1001232537 <br> class section : 3:30<br>
+			<form action="/login" method="POST" enctype="multipart/form-data">
+					Login:<br><input type="text" name="uname"><br>
+					<input type="password" name="pwd"><br>
+					<input type="submit" value="submit">
+           		 </form><br><br>
+				 <form action="/signup" method="POST" enctype="multipart/form-data">
+				    Signup:<br>
+					<input type="text" name="uname"><br>
+					<input type="password" name="pwd"><br>
+                    <input type="text" name="grp"><br>
+					<input type="submit" value="submit">
+           		 </form>
+		</tr>
+	</table>
+</body>
+</html>
